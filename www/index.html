@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script src="https://code.createjs.com/createjs-2014.12.12.min.js"></script>
+<script src="js/jquery-2.1.3.min.js"></script>
+
+<title>Mi Policia</title>
+</head>
+<body>
+	<div class="top">
+		<img src="img/Logo CDMX.png" /> <img src="img/SSP-CDMX.png" /> <img
+			src="img/mi_policia_.png" />
+	</div>
+	<canvas id="menu">
+		
+		</canvas>
+	<div id="txt">Presiona el boton central en caso de emergencia.</div>
+	<div id="container" style="display: none;">
+		<div id="containerText"></div>
+		<div id="pol" style="display: none;">
+			<h4>Política de Privacidad.</h4>
+			<p>
+				Por medio de nuestra política de privacidad le informamos las
+				condiciones de uso de la aplicación “MI POLICIA”. Mediante la
+				descarga gratuita de la aplicación “MI POLICIA”, el usuario tendrá
+				acceso a la información del Programa de Cuadrantes, de manera
+				referenciada vía GPS en su posición actual o bien, realizando una
+				búsqueda por Delegación, Colonia y/o Calles, podrá realizar
+				denuncias o quejas al Centro de Atención de Secretario y Verificar
+				si un vehículo fue remitido a un depósito (corralón).<br /> <br />
+				El resultado de la información que verá el usuario, es de manera
+				gráfica un mapa con la delimitación del área del cuadrante, el
+				número telefónico local al que podrá marcar en caso de emergencia o
+				consulta de datos informativos del cuadrante.<br /> <br /> Los
+				usuarios con acceso a un Smartphone con sistema operativo iOS y
+				otros podrán descargar de manera gratuita la aplicación.<br /> <br />
+				El objetivo es proporcionar un mejor servicio de la policía a la
+				población usuaria de este tipo de teléfonos, que se estima en 3
+				millones de personas incluyendo a la población flotante. Así como
+				generar un mayor acercamiento con la ciudadanía, que tendrá una
+				herramienta para su seguridad.
+			</p>
+
+			<h4>Política de Protección de Datos Personales.</h4>
+
+			<p>La Secretaría de Seguridad Pública del Distrito Federal,
+				protegerá los datos personales recabados con motivo de las denuncias
+				o sugerencias realizadas al Centro de Atención del Secretario (CAS)
+				que se realicen a través de los Smartphones (nombre, número
+				telefónico o cualquier otro dato personal), atendiendo al sistema de
+				datos personales denominado Centro de Atención del Secretario (CAS)
+				y de conformidad con la Ley de Protección de Datos Personales para
+				el Distrito Federal.</p>
+			<h4>Propiedad Intelectual.</h4>
+			<p>
+				El código fuente, los diseños gráficos, las imágenes, las
+				fotografías, los sonidos, las animaciones, el software, los textos,
+				así como la información y los contenidos que se recogen en la
+				aplicación “MI POLICIA” son propiedad de la Secretaría de Seguridad
+				Pública del Distrito Federal y únicamente, se permite su uso con
+				fines de seguridad pública, quedando estrictamente prohibido su uso
+				y/o reproducción total o parcial para fines distintos de los
+				previstos; su modificación, transformación o decompilación, será
+				realizada por la propia Secretaría.<br /> <br /> El usuario única
+				y exclusivamente puede utilizar el material que aparezca en esta
+				aplicación para fines de consulta y/o solicitud de emergencias,
+				quedando prohibido su uso con fines comerciales o para incurrir en
+				actividades ilícitas. Todos los derechos derivados de la propiedad
+				intelectual de la presente aplicación están expresamente reservados
+				por la Secretaría de Seguridad Pública del Distrito Federal.
+			</p>
+		</div>
+		<div id="turistica" style="display: none;">
+			<div>
+				<div data-role="collapsible">
+					<h3>Seguridad</h3>
+					<p>La moneda autorizada para cualquier transacción es el peso
+						mexicano. Su tipo de cambio varía diariamente respecto a la
+						cotización del dólar.</p>
+					<p>Evita el uso de tarjetas de crédito, débito en lugares no
+						establecidos.</p>
+					<p>Utiliza cajeros automáticos (ATM) de supermercados o bancos
+						que cuenten con personal de seguridad. Usa esos cajeros sólo
+						durante el día.</p>
+					<p>Si te extravías, mantén la calma y pregunta a un policía o
+						dentro de comercios establecidos, por direcciones.</p>
+					<p>Mantén bien vigiladas tus pertenencias, especialmente en
+						zonas turísticas concurridas, o en medio de una aglomeración.</p>
+					<p>En caso de asalto es mejor no resistirte, tu integridad vale
+						más que las pertenencias y la resistencia generalmente produce
+						violencia en los ladrones.</p>
+					<p>Evita a toda costa lugares solitarios. No aceptes el
+						ofrecimiento de ningún desconocido para transportarte en su
+						automóvil a tu destino.</p>
+					<p>Deja tu pasaporte y demás documentos migratorios originales
+						bajo resguardo en la caja de seguridad del hotel. Únicamente lleva
+						contigo una identificación y copias de los papeles que acreditan
+						tu estancia en México.</p>
+					<p>Lleva contigo solo la cantidad de dinero que consideres
+						necesaria para tu día de actividades. Al igual que la
+						recomendación anterior puedes dejar el resto en la caja fuerte de
+						tu habitación.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Trasporte</h3>
+					<p>Usa sólo servicios autorizados de taxis y de guías.</p>
+					<p>En transportes como el metro de Ciudad de México hay vagones
+						destinados exclusivamente para que las mujeres puedan viajar con
+						mayor seguridad por este medio.</p>
+					<p>Como recomendación general te sugerimos no exhibir objetos
+						de valor cuando utilices el transporte público</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Salud</h3>
+					<p>Come en establecimientos apropiados y evita en la medida de
+						lo posible los puestos callejeros.</p>
+					<p>No bebas agua directamente del grifo.</p>
+					<p>Identifica los números de atención de emergencias.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Vida Nocturna</h3>
+					<p>Reconoce tus límites, no bebas de más. En lugares como
+						Ciudad de México, se aplica el programa “Alcoholímetro” que
+						detecta a automovilistas en estado de ebriedad. Los infractores
+						son arrestados sin derecho a fianza.</p>
+					<p>Tomar bebidas alcohólicas en la vía pública está prohibido
+						en México. El infringir esta ley es causa de detención y pago de
+						una multa.</p>
+					<p>No aceptes el ofrecimiento de drogas. La portación y el
+						consumo de drogas son altamente penalizados por las leyes
+						mexicanas.</p>
+					<p>Si no te encuentras en buenas condiciones o no cuentas con
+						un vehículo propio al salir de un centro nocturno, pide que
+						soliciten para ti un “taxi de sitio”.</p>
+				</div>
+			</div>
+		</div>
+		<div id="reporte" style="display: none;">
+			
+				<div class="center">
+					<div id="btnCamera" class="btn-file">
+						<img id="cameraPreview" width="100" height="100" src="img/menu/btn_foto_1.png" /> 
+					</div>
+				</div>
+				
+				<input id="description" name="description" type="text" placeholder="Descripcion" />
+				 <select id="category"
+					name="category" type="text" placeholder="Categoria">
+					<option value="Robo">Robo</option>
+					<option value="Abuso de autoridad">Abuso de autoridad</option>
+					<option value="Vandalismo">Vandalismo</option>
+					<option value="Vigilancia">Vigilancia</option>
+					<option value="Venta de droga">Venta de droga</option>					
+					
+				</select>
+				<button id="enviar"><img src="img/menu/btn_subir_1.png"/></button>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

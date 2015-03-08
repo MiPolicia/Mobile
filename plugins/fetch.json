@@ -1,0 +1,21 @@
+{
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.geolocation"
+        }
+    },
+    "com.cesidiodibenedetto.filechooser": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cdibened/filechooser.git",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.camera": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.camera"
+        }
+    }
+}
